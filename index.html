@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>猜数字游戏</title>
+        <link rel="stylesheet" type="text/css" href="css.css" />
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>猜数字游戏</h1>
+            <p>我刚才随机选定了一个100以内的正整数。看你能否在10次以内猜中它。每次我都会告诉你所猜的结果是高了还是低了。</p>
+            <p>请输入你的猜测：<input type="text" id="guess" /></p>
+            <p>你已经猜了 <span id="count"></span> 次。</p>    
+            <input type="button" value="确定" onclick="guess()" id="btnsubmit"/>
+            <input type="button" value="重新开始" onclick="restart()" id="btnrestart"/>
+            <p id="result"></p>
+            <p id="final"></p>
+            <p>历史记录：</p>
+            <div id="history"></div>
+        </div>
+    </body>
+    <script src="scripts.js"></script>
+</HTML>
